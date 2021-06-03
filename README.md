@@ -4,6 +4,7 @@ pipenv shell
 pipenv install
 ```
 
+Download by {month}, Search pages {start_page} to {end_page} of sprout
 ```
 python main.py -u {username} -p {password} -s {start_page} -e {end_page} -y {year} -m {month}
 ```
