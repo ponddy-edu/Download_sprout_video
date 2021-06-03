@@ -51,7 +51,7 @@ def download_video(req, video_id):
         stream=True,
     )
     filename = res.headers['Content-Disposition'].split('filename=')[1]
-    with open(os.path.join('videos', f'{filename}.mp4'), 'wb') as video:
+    with open(os.path.join('videos', f'{filename}'), 'wb') as video:
         [video.write(chunk) for chunk in res]
 
 
